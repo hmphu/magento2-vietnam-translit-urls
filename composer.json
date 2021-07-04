@@ -1,0 +1,35 @@
+{
+    "name": "hmphu/magento2-vietnam-translit-urls",
+    "description": "Friendly url for vietnamese accented characters (\"ồ\" => \"o\", \"ừ\" => \"u\").",
+    "authors": [
+        {
+            "name": "Phu Hoang",
+            "email": "hmphu.it@gmail.com"
+        }
+    ],
+    "require": {
+        "magento/framework": ">=100.0.0",
+        "php": ">=7.1.0"
+    },
+    "type": "magento2-module",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "HMP\\VietnameseTranslitUrls\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require-dev": {
+        "magento/magento-coding-standard": "@dev"
+    }
+}
